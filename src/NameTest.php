@@ -2,6 +2,7 @@
 
 namespace QuickcheckTests;
 
+use Faker\Factory;
 use PHPUnit\Framework\TestCase;
 use Eris\Generator;
 
@@ -10,11 +11,15 @@ class NameTest extends TestCase
     use \Eris\TestTrait;
 
     public function testFullName() {
+        $faker = Factory::create('nl_BE');
+
         $this
             ->forAll(
                 Generator\frequency(
                     [1, Generator\constant('David')],
-                    [50, Generator\string()]
+                    [50, Generator\map(function($void) use ($faker) {
+                        return $faker->firstName();
+                    }, Generator\constant('void'))]
                 ),
                 Generator\char(),
                 Generator\string()
