@@ -12,7 +12,10 @@ class NameTest extends TestCase
     public function testFullName() {
         $this
             ->forAll(
-                Generator\string(),
+                Generator\frequency(
+                    [1, Generator\constant('David')],
+                    [50, Generator\string()]
+                ),
                 Generator\char(),
                 Generator\string()
             )
