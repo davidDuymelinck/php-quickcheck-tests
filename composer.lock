@@ -4,9 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "566ba2dcbe1f14f2eea0ad03b66e4766",
-    "content-hash": "db6cbc884f6a5df64a60295748df6195",
-    "packages": [
+    "hash": "e870c72cb771b486f97b16508a07bbca",
+    "content-hash": "7a5a9c3c2f5b3384d16b55c0835be82c",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
@@ -111,16 +112,16 @@
         },
         {
             "name": "giorgiosironi/eris",
-            "version": "dev-master",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giorgiosironi/eris.git",
-                "reference": "571f5c5cd5acf27db4b80d707db534d65c6fc8c4"
+                "reference": "538bbdaeb5679d094a33864fd54f85d6a4ffaa74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giorgiosironi/eris/zipball/571f5c5cd5acf27db4b80d707db534d65c6fc8c4",
-                "reference": "571f5c5cd5acf27db4b80d707db534d65c6fc8c4",
+                "url": "https://api.github.com/repos/giorgiosironi/eris/zipball/538bbdaeb5679d094a33864fd54f85d6a4ffaa74",
+                "reference": "538bbdaeb5679d094a33864fd54f85d6a4ffaa74",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +129,7 @@
                 "phpunit/phpunit": ">4,<7"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
+                "fabpot/php-cs-fixer": "^1.11.2",
                 "icomefromthenet/reverse-regex": "v0.0.6.3"
             },
             "suggest": {
@@ -162,7 +163,7 @@
                 }
             ],
             "description": "PHP library for property-based testing. Integrates with PHPUnit.",
-            "time": "2017-03-20 21:33:33"
+            "time": "2017-03-12 17:39:53"
         },
         {
             "name": "myclabs/deep-copy",
@@ -1415,12 +1416,9 @@
             "time": "2016-11-23 20:04:58"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "giorgiosironi/eris": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -3,12 +3,23 @@
 namespace QuickcheckTests;
 
 use PHPUnit\Framework\TestCase;
+use Eris\Generator;
 
 class NameTest extends TestCase
 {
-    public function testEmptyFullName() {
-        $name = new Name('', '');
+    use \Eris\TestTrait;
 
-        $this->assertEquals(' ', $name->getFullName());
+    public function testFullName() {
+        $this
+            ->forAll(
+                Generator\string(),
+                Generator\char(),
+                Generator\string()
+            )
+            ->then(function($firstName, $separator, $lastName) {
+                $name = new Name($firstName, $lastName);
+
+                $this->assertEquals($firstName.$separator.$lastName, $name->getFullName($separator));
+            });
     }
 }

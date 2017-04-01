@@ -13,5 +13,8 @@
     "psr-4": {
       "QuickcheckTests\\": "src/"
     }
+  },
+  "require-dev": {
+    "giorgiosironi/eris": "^0.9.0"
   }
 }
