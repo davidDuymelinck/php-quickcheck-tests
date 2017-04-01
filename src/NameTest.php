@@ -17,6 +17,7 @@ class NameTest extends TestCase
                 Generator\string()
             )
             ->then(function($firstName, $separator, $lastName) {
+                echo $firstName.PHP_EOL;
                 $name = new Name($firstName, $lastName);
 
                 $this->assertEquals($firstName.$separator.$lastName, $name->getFullName($separator));
