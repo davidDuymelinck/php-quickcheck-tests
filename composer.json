@@ -1,0 +1,17 @@
+{
+  "name": "davidduymelinck/php-quickcheck-tests",
+  "description": "Real world example of quickcheck tests",
+  "minimum-stability": "stable",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "David Duymelinck",
+      "email": "dlinck@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "QuickcheckTests\\": "src/"
+    }
+  }
+}
